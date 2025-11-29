@@ -5,45 +5,44 @@
   <title>Kapustas' Automotive Repair & Service | KARS Telford PA Auto Repair</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Kapustas' Automotive Repair & Service (KARS) in Telford, PA. Full-service auto repair, welding, custom upgrades, light commercial & fleet maintenance, and trusted installation of Rev-X, KC HiLites, Air Lift, WeatherTech, Thule & Bilstein." />
-  <meta name="keywords" content="auto repair Telford PA, Kapustas Automotive Repair, KARS Telford, welding repair, custom upgrades, fleet maintenance, inspections, Rev-X dealer, KC HiLites installer" />
+  <meta name="keywords" content="KARS, Kapustas Automotive Repair, auto repair Telford PA, welding repair, custom upgrades, fleet maintenance, Rev-X dealer, KC HiLites installer, Air Lift dealer, WeatherTech dealer, Thule dealer, Bilstein installer" />
   <link rel="canonical" href="https://yourgithubusername.github.io/kapustasautorepair/" />
 
-  <!-- Open Graph / Social -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Kapustas' Automotive Repair & Service | KARS Telford PA" />
-  <meta property="og:description" content="Family-run, full-service auto repair and customization in Telford, PA. Honest, skilled, and ready for your next project." />
+  <meta property="og:description" content="Family-run, full-service auto repair and custom upgrades in Telford, PA." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://yourgithubusername.github.io/kapustasautorepair/" />
-  <meta property="og:image" content="https://yourgithubusername.github.io/kapustasautorepair/images/hero-garage.jpg" />
+  <meta property="og:image" content="https://yourgithubusername.github.io/kapustasautorepair/images/hero-shop-exterior.jpg" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
 
-  <!-- Icons (optional, for social icons) -->
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
     :root {
-      --bg: #050711;
-      --bg-soft: #0f111a;
-      --bg-panel: #111522;
-      --bg-panel-soft: #171b29;
-      --accent: #f4b321;
-      --accent-soft: rgba(244, 179, 33, 0.12);
-      --accent-strong: #ffcf5b;
-      --text: #f7f7fb;
-      --text-muted: #a1a5b8;
+      --bg: #020305;
+      --bg-soft: #05070d;
+      --bg-panel: #05090f;
+      --bg-panel-soft: #070c14;
+      --accent: #36f58c;
+      --accent-soft: rgba(54, 245, 140, 0.18);
+      --accent-strong: #86ffbe;
+      --text: #f8f9ff;
+      --text-muted: #9ea3ba;
       --border-soft: rgba(255, 255, 255, 0.10);
-      --danger: #ff4e4e;
-      --success: #45d29c;
-      --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.55);
+      --danger: #ff4c5b;
       --radius-lg: 18px;
       --radius-md: 12px;
       --radius-pill: 999px;
-      --transition-fast: 0.18s ease-out;
-      --transition-med: 0.28s ease-out;
+      --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.85);
       --max-width: 1120px;
+      --transition-fast: 0.18s ease-out;
+      --transition-med: 0.3s ease-out;
     }
 
     * {
@@ -52,15 +51,15 @@
 
     html {
       scroll-behavior: smooth;
-      background: radial-gradient(circle at top, #151a2f 0, #020309 55%, #000000 100%);
+      background: #010103;
     }
 
     body {
       margin: 0;
       font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
       color: var(--text);
-      background: radial-gradient(circle at top, #151a2f 0, #020309 55%, #000000 100%);
-      min-height: 100vh;
+      background:
+        radial-gradient(circle at top, #0b171f 0, #020305 45%, #000000 100%);
       -webkit-font-smoothing: antialiased;
     }
 
@@ -75,40 +74,17 @@
     }
 
     main {
-      padding-top: 72px; /* space for sticky header */
+      padding-top: 80px;
     }
 
-    /* Layout helpers */
     .page-shell {
       max-width: var(--max-width);
       margin: 0 auto;
       padding: 0 20px;
     }
 
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.3rem 0.9rem;
-      border-radius: var(--radius-pill);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      background: linear-gradient(135deg, rgba(244, 179, 33, 0.16), rgba(255, 255, 255, 0.02));
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--accent-strong);
-    }
-
-    .pill-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--success);
-      box-shadow: 0 0 10px rgba(69, 210, 156, 0.7);
-    }
-
     .section {
-      padding: 72px 0 40px;
+      padding: 80px 0 40px;
     }
 
     .section-header {
@@ -120,40 +96,41 @@
     }
 
     .section-title {
-      font-size: 1.9rem;
-      letter-spacing: 0.04em;
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-size: 2rem;
       text-transform: uppercase;
+      letter-spacing: 0.12em;
       font-weight: 600;
-      color: #ffffff;
     }
 
     .section-kicker {
-      font-size: 0.9rem;
-      color: var(--text-muted);
       max-width: 420px;
+      font-size: 0.92rem;
+      color: var(--text-muted);
     }
 
     .badge {
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
-      padding: 0.3rem 0.7rem;
+      padding: 0.25rem 0.7rem;
       border-radius: var(--radius-pill);
-      border: 1px solid var(--border-soft);
-      font-size: 0.7rem;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(6, 11, 18, 0.96);
+      font-size: 0.72rem;
       text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--text-muted);
+      letter-spacing: 0.16em;
+      color: var(--accent-strong);
     }
 
     .badge i {
-      font-size: 0.8rem;
-      color: var(--accent-strong);
+      font-size: 0.75rem;
+      color: var(--accent);
     }
 
     .btn {
       border-radius: var(--radius-pill);
-      padding: 0.65rem 1.4rem;
+      padding: 0.7rem 1.5rem;
       border: 1px solid transparent;
       display: inline-flex;
       align-items: center;
@@ -163,122 +140,137 @@
       cursor: pointer;
       background: none;
       color: inherit;
-      transition: background var(--transition-med), transform var(--transition-fast), box-shadow var(--transition-med), border-color var(--transition-med), color var(--transition-med);
-      text-decoration: none;
       white-space: nowrap;
+      transition:
+        background var(--transition-med),
+        transform var(--transition-fast),
+        box-shadow var(--transition-med),
+        border-color var(--transition-med),
+        color var(--transition-med);
     }
 
     .btn-primary {
-      background-image: linear-gradient(135deg, var(--accent), var(--accent-strong));
-      color: #171717;
-      box-shadow: 0 16px 35px rgba(244, 179, 33, 0.35);
+      background: radial-gradient(circle at 10% 0, var(--accent-strong), var(--accent));
+      color: #020304;
+      box-shadow: 0 18px 40px rgba(54, 245, 140, 0.35);
     }
 
     .btn-primary:hover {
       transform: translateY(-1px);
-      box-shadow: 0 22px 45px rgba(244, 179, 33, 0.55);
+      box-shadow: 0 25px 60px rgba(54, 245, 140, 0.5);
     }
 
     .btn-outline {
-      border-color: rgba(255, 255, 255, 0.22);
-      background: rgba(7, 9, 17, 0.8);
+      border-color: rgba(255, 255, 255, 0.28);
+      background: rgba(5, 9, 15, 0.96);
       color: var(--text);
     }
 
     .btn-outline:hover {
       border-color: var(--accent);
-      background: rgba(15, 18, 32, 0.9);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.9);
       transform: translateY(-1px);
     }
 
-    .btn-icon {
-      width: 30px;
-      height: 30px;
-      border-radius: 999px;
+    .btn-ghost {
+      border-color: transparent;
+      background: none;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+    }
+
+    .btn-ghost:hover {
+      color: var(--accent-strong);
+    }
+
+    .btn i {
+      font-size: 0.9rem;
+    }
+
+    .pill {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      background: rgba(5, 7, 12, 0.9);
-      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.45);
-      font-size: 0.8rem;
-      cursor: pointer;
-      transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+      gap: 0.5rem;
+      padding: 0.3rem 1rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(54, 245, 140, 0.35);
+      background: radial-gradient(circle at 0 0, rgba(54, 245, 140, 0.35), rgba(0, 0, 0, 0.98));
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent-strong);
     }
 
-    .btn-icon:hover {
-      border-color: var(--accent);
-      background: rgba(12, 15, 26, 0.95);
-      transform: translateY(-1px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.55);
+    .pill-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 12px rgba(54, 245, 140, 0.95);
     }
 
-    /* Header / Nav */
+    /* Header */
     .site-header {
       position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
+      inset: 0 0 auto 0;
       z-index: 1000;
-      backdrop-filter: blur(16px);
-      background: linear-gradient(to bottom, rgba(2, 4, 10, 0.93), rgba(2, 4, 10, 0.85), transparent);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-      transition: background 0.22s ease-out, box-shadow 0.22s ease-out, transform 0.22s ease-out;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.96), rgba(0, 0, 0, 0.9), transparent);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(14px);
+      transition:
+        background 0.22s ease-out,
+        box-shadow 0.22s ease-out,
+        border-color 0.22s ease-out;
     }
 
     .site-header.scrolled {
-      background: radial-gradient(circle at top, rgba(23, 27, 48, 0.98), rgba(5, 7, 15, 0.98));
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.85);
+      background: radial-gradient(circle at top, rgba(9, 21, 17, 0.98), rgba(0, 0, 0, 0.98));
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.9);
+      border-color: rgba(54, 245, 140, 0.3);
     }
 
     .nav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 14px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 14px 20px;
-      max-width: var(--max-width);
-      margin: 0 auto;
-      gap: 1.2rem;
+      gap: 1.4rem;
     }
 
     .brand {
       display: flex;
       align-items: center;
-      gap: 0.7rem;
+      gap: 0.75rem;
     }
 
-    .brand-mark {
-      width: 36px;
-      height: 36px;
-      border-radius: 12px;
-      background: conic-gradient(from 210deg, #f4b321, #ffcf5b, #f4b321, #f4b321, #f4b321);
+    .brand-logo-wrap {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: radial-gradient(circle at 0 0, rgba(54, 245, 140, 0.5), #020305 50%);
+      padding: 4px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.9);
       position: relative;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.85);
       overflow: hidden;
     }
 
-    .brand-mark::before {
+    .brand-logo-wrap::after {
       content: "";
       position: absolute;
-      inset: 3px;
-      border-radius: 10px;
-      background: radial-gradient(circle at top, #1a1d2a, #060712 60%, #010104 100%);
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      inset: 1px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      pointer-events: none;
     }
 
-    .brand-mark::after {
-      content: "K";
-      position: absolute;
-      inset: 3px;
+    .brand-logo {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
       border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: "Playfair Display", serif;
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--accent-strong);
-      text-shadow: 0 0 12px rgba(244, 179, 33, 0.7);
+      display: block;
     }
 
     .brand-text {
@@ -288,29 +280,30 @@
     }
 
     .brand-name {
+      font-family: "Space Grotesk", system-ui, sans-serif;
       font-size: 1.05rem;
-      font-weight: 600;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
+      font-weight: 600;
     }
 
     .brand-subtitle {
-      font-size: 0.72rem;
-      color: var(--text-muted);
+      font-size: 0.7rem;
       text-transform: uppercase;
-      letter-spacing: 0.16em;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 1.6rem;
+      gap: 1.8rem;
       font-size: 0.9rem;
     }
 
     .nav-links a {
-      color: var(--text-muted);
       position: relative;
+      color: var(--text-muted);
       padding-bottom: 4px;
       transition: color var(--transition-fast), opacity var(--transition-fast);
     }
@@ -338,16 +331,50 @@
     .nav-cta {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.75rem;
+    }
+
+    .social-inline {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.86rem;
+    }
+
+    .social-inline a {
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(3, 6, 10, 0.96);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      transition:
+        transform var(--transition-fast),
+        border-color var(--transition-fast),
+        box-shadow var(--transition-fast),
+        color var(--transition-fast),
+        background var(--transition-fast);
+    }
+
+    .social-inline a:hover {
+      color: var(--accent-strong);
+      border-color: var(--accent);
+      background: rgba(4, 10, 13, 0.96);
+      transform: translateY(-1px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.9);
     }
 
     .nav-toggle {
       display: none;
-      width: 36px;
-      height: 36px;
+      width: 38px;
+      height: 38px;
       border-radius: 999px;
-      border: 1px solid rgba(255, 255, 255, 0.22);
-      background: rgba(5, 7, 14, 0.96);
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      background: rgba(3, 5, 9, 0.98);
       align-items: center;
       justify-content: center;
       cursor: pointer;
@@ -358,12 +385,12 @@
     .nav-toggle span::before,
     .nav-toggle span::after {
       display: block;
-      width: 17px;
+      width: 18px;
       height: 2px;
       border-radius: 999px;
       background: var(--text);
       position: relative;
-      transition: transform 0.21s ease, opacity 0.21s ease;
+      transition: transform 0.22s ease, opacity 0.22s ease;
     }
 
     .nav-toggle span::before,
@@ -395,39 +422,48 @@
 
     /* Hero */
     .hero {
-      padding: 96px 0 72px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background:
+        radial-gradient(circle at 0 0, rgba(54, 245, 140, 0.18), transparent 50%),
+        radial-gradient(circle at 100% 0, rgba(0, 173, 124, 0.16), transparent 55%);
+      opacity: 0.9;
+      pointer-events: none;
     }
 
     .hero-grid {
+      position: relative;
       display: grid;
       grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
-      gap: 50px;
+      gap: 52px;
       align-items: center;
-    }
-
-    .hero-eyebrow {
-      margin-bottom: 16px;
+      z-index: 1;
     }
 
     .hero-heading {
-      font-family: "Playfair Display", serif;
-      font-size: clamp(2.35rem, 4vw, 3rem);
-      letter-spacing: 0.04em;
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-size: clamp(2.3rem, 4vw, 3rem);
       text-transform: uppercase;
-      margin: 0 0 14px;
+      letter-spacing: 0.12em;
+      margin: 0 0 12px;
     }
 
     .hero-heading span {
-      background: linear-gradient(106deg, #ffffff, #ffe9b0, var(--accent-strong));
-      -webkit-background-clip: text;
-      color: transparent;
+      color: var(--accent-strong);
+      text-shadow: 0 0 22px rgba(54, 245, 140, 0.7);
     }
 
     .hero-subtitle {
-      font-size: 0.98rem;
+      font-size: 0.96rem;
       color: var(--text-muted);
-      max-width: 540px;
-      line-height: 1.6;
+      max-width: 560px;
+      line-height: 1.7;
     }
 
     .hero-subtitle strong {
@@ -438,30 +474,18 @@
     .hero-ctas {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.85rem;
+      gap: 0.9rem;
       align-items: center;
-      margin: 24px 0 20px;
-    }
-
-    .hero-note {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
-
-    .hero-note i {
-      color: var(--accent);
+      margin: 24px 0 18px;
     }
 
     .hero-meta {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.2rem;
-      margin-top: 24px;
-      font-size: 0.8rem;
+      gap: 1.1rem 1.8rem;
+      font-size: 0.82rem;
       color: var(--text-muted);
+      margin-top: 14px;
     }
 
     .hero-meta-item {
@@ -471,10 +495,10 @@
     }
 
     .hero-meta-label {
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
       font-size: 0.68rem;
-      color: rgba(161, 165, 184, 0.85);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: rgba(158, 163, 186, 0.85);
     }
 
     .hero-meta-value {
@@ -482,68 +506,74 @@
       font-weight: 500;
     }
 
+    .hero-note {
+      font-size: 0.8rem;
+      color: var(--accent-strong);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .hero-note i {
+      color: var(--accent);
+    }
+
     .hero-media-wrapper {
       position: relative;
-      min-height: 260px;
+      min-height: 280px;
     }
 
     .hero-card {
       position: relative;
       border-radius: 26px;
-      background: radial-gradient(circle at top left, #2a304a 0, #0b0d18 45%, #050612 100%);
-      border: 1px solid rgba(255, 255, 255, 0.09);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: radial-gradient(circle at 0 0, rgba(54, 245, 140, 0.18), #05070d 55%, #020305 100%);
+      padding: 16px 16px 18px;
       box-shadow: var(--shadow-soft);
-      padding: 18px 18px 18px;
       overflow: hidden;
-    }
-
-    .hero-card::before {
-      content: "";
-      position: absolute;
-      inset: -40%;
-      background:
-        radial-gradient(circle at top left, rgba(244, 179, 33, 0.18) 0, transparent 50%),
-        radial-gradient(circle at bottom right, rgba(64, 230, 164, 0.12) 0, transparent 55%);
-      opacity: 0.9;
-      mix-blend-mode: screen;
-      pointer-events: none;
     }
 
     .hero-photo {
       position: relative;
       border-radius: 20px;
       overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      background: radial-gradient(circle at top, #161a28 0, #060713 55%);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: #000;
       height: 230px;
       display: flex;
-      align-items: flex-end;
+      flex-direction: column;
       justify-content: flex-end;
     }
 
-    .hero-photo::before {
-      content: "";
+    .hero-photo img {
       position: absolute;
       inset: 0;
-      background: url("./images/hero-garage.jpg") center/cover no-repeat;
-      mix-blend-mode: normal;
-      opacity: 0.9;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.02);
+      filter: saturate(1.1) contrast(1.05);
+      transition: transform 0.8s ease-out;
+    }
+
+    .hero-card:hover .hero-photo img {
+      transform: scale(1.06);
     }
 
     .hero-photo-overlay {
       position: relative;
       padding: 14px 16px;
-      width: 100%;
+      background: linear-gradient(to top, rgba(1, 3, 4, 0.96), rgba(1, 3, 4, 0.1));
+      z-index: 1;
       display: flex;
+      align-items: flex-end;
       justify-content: space-between;
       gap: 1rem;
-      align-items: flex-end;
-      background: linear-gradient(to top, rgba(4, 5, 10, 0.95), rgba(4, 5, 10, 0.15));
     }
 
     .hero-photo-text h3 {
-      margin: 0 0 4px;
-      font-size: 0.98rem;
+      margin: 0 0 3px;
+      font-size: 0.95rem;
     }
 
     .hero-photo-text p {
@@ -554,54 +584,56 @@
 
     .hero-chip {
       border-radius: var(--radius-pill);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       padding: 0.35rem 0.8rem;
-      font-size: 0.7rem;
-      border: 1px solid rgba(255, 255, 255, 0.28);
-      background: rgba(5, 5, 10, 0.9);
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      background: rgba(0, 0, 0, 0.92);
       display: inline-flex;
       align-items: center;
-      gap: 0.35rem;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
+      gap: 0.34rem;
+      color: var(--accent-strong);
     }
 
     .hero-chip i {
-      color: var(--accent-strong);
+      color: var(--accent);
+      font-size: 0.8rem;
     }
 
     .hero-floating-card {
       position: absolute;
-      right: 8px;
+      right: 10px;
       top: -10px;
-      border-radius: 14px;
+      border-radius: 16px;
       padding: 10px 12px;
-      background: rgba(5, 8, 18, 0.98);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75);
+      background: rgba(3, 7, 8, 0.98);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.95);
       font-size: 0.75rem;
-      max-width: 210px;
+      max-width: 230px;
       display: flex;
       flex-direction: column;
-      gap: 2px;
-      backdrop-filter: blur(14px);
+      gap: 3px;
+      backdrop-filter: blur(12px);
     }
 
     .hero-floating-label {
+      font-size: 0.66rem;
       text-transform: uppercase;
-      font-size: 0.65rem;
-      letter-spacing: 0.16em;
-      color: var(--text-muted);
+      letter-spacing: 0.18em;
+      color: rgba(158, 163, 186, 0.95);
     }
 
     .hero-floating-main {
-      font-weight: 500;
       color: #ffffff;
+      font-weight: 500;
     }
 
     .hero-floating-pill {
       display: inline-flex;
       align-items: center;
-      gap: 0.35rem;
+      gap: 0.3rem;
       font-size: 0.7rem;
       color: var(--text-muted);
       margin-top: 4px;
@@ -615,41 +647,41 @@
       position: absolute;
       left: -8px;
       bottom: 12px;
-      border-radius: 999px;
-      padding: 0.22rem 0.65rem;
-      font-size: 0.68rem;
-      background: rgba(9, 12, 28, 0.96);
-      border: 1px solid rgba(255, 255, 255, 0.16);
       display: inline-flex;
       align-items: center;
-      gap: 0.32rem;
+      gap: 0.34rem;
+      border-radius: 999px;
+      padding: 0.2rem 0.7rem;
+      background: rgba(2, 7, 6, 0.98);
+      border: 1px solid rgba(54, 245, 140, 0.4);
+      font-size: 0.68rem;
     }
 
     .hero-floating-badge-dot {
-      width: 9px;
-      height: 9px;
+      width: 8px;
+      height: 8px;
       border-radius: 999px;
-      background: var(--success);
-      box-shadow: 0 0 12px rgba(69, 210, 156, 0.9);
+      background: var(--accent);
+      box-shadow: 0 0 14px rgba(54, 245, 140, 0.9);
     }
 
     .hero-brand-row {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 10px;
       margin-top: 14px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
     }
 
     .hero-brand {
       border-radius: 999px;
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      padding: 5px 9px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 6px 10px;
+      background: rgba(4, 7, 10, 0.98);
+      font-size: 0.75rem;
+      color: var(--text-muted);
       display: flex;
       align-items: center;
-      justify-content: center;
-      font-size: 0.68rem;
-      color: var(--text-muted);
-      background: rgba(6, 9, 18, 0.94);
+      gap: 0.4rem;
       white-space: nowrap;
     }
 
@@ -658,46 +690,61 @@
       font-weight: 500;
     }
 
+    .hero-brand i {
+      color: var(--accent);
+      font-size: 0.8rem;
+    }
+
     /* Services */
     .cards-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
+      gap: 20px;
     }
 
     .card {
+      position: relative;
       border-radius: var(--radius-lg);
       border: 1px solid var(--border-soft);
-      background: radial-gradient(circle at top left, rgba(244, 179, 33, 0.06), rgba(14, 18, 31, 0.96));
+      background: radial-gradient(circle at 0 0, rgba(54, 245, 140, 0.15), rgba(5, 7, 12, 0.98));
       padding: 18px 18px 16px;
-      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.7);
-      position: relative;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.85);
       overflow: hidden;
+      isolation: isolate;
+      transition: transform var(--transition-med), box-shadow var(--transition-med), border-color var(--transition-med);
     }
 
     .card::before {
       content: "";
       position: absolute;
       inset: -40%;
-      background: radial-gradient(circle at top right, rgba(244, 179, 33, 0.10) 0, transparent 55%);
+      background:
+        radial-gradient(circle at 100% 0, rgba(54, 245, 140, 0.22), transparent 55%);
       opacity: 0;
+      mix-blend-mode: screen;
       transition: opacity var(--transition-med);
       pointer-events: none;
     }
 
+    .card:hover {
+      transform: translateY(-2px) translateZ(0);
+      border-color: rgba(54, 245, 140, 0.4);
+      box-shadow: 0 22px 60px rgba(0, 0, 0, 0.95);
+    }
+
     .card:hover::before {
-      opacity: 1;
+      opacity: 0.9;
     }
 
     .card-icon {
-      width: 32px;
-      height: 32px;
+      width: 34px;
+      height: 34px;
       border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: radial-gradient(circle at top, rgba(244, 179, 33, 0.25), rgba(10, 10, 12, 0.98));
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: radial-gradient(circle at 0 0, rgba(54, 245, 140, 0.4), #020305 65%);
+      border: 1px solid rgba(255, 255, 255, 0.22);
       margin-bottom: 10px;
       font-size: 1rem;
       color: var(--accent-strong);
@@ -706,13 +753,14 @@
     .card-title {
       font-size: 1rem;
       margin-bottom: 6px;
+      font-weight: 500;
     }
 
     .card-body {
       font-size: 0.86rem;
+      line-height: 1.7;
       color: var(--text-muted);
-      line-height: 1.6;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .card-list {
@@ -728,74 +776,84 @@
 
     .card-tag {
       position: absolute;
-      top: 12px;
+      top: 10px;
       right: 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 2px 8px;
       font-size: 0.66rem;
       text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: rgba(255, 255, 255, 0.7);
-      background: rgba(6, 7, 14, 0.9);
-      padding: 2px 8px;
-      border-radius: 999px;
-      border: 1px solid rgba(255, 255, 255, 0.15);
+      letter-spacing: 0.16em;
+      background: rgba(0, 0, 0, 0.92);
+      color: rgba(220, 223, 242, 0.9);
     }
 
-    /* Brands / Partners */
-    .brands-panel {
+    /* Gallery */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .gallery-main,
+    .gallery-side {
       border-radius: var(--radius-lg);
-      border: 1px solid var(--border-soft);
-      background: radial-gradient(circle at top, rgba(244, 179, 33, 0.06), rgba(9, 11, 20, 0.98));
-      padding: 18px 18px 14px;
-      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.75);
-    }
-
-    .brands-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 10px;
-    }
-
-    .brand-chip {
-      border-radius: 999px;
-      padding: 6px 10px;
       border: 1px solid rgba(255, 255, 255, 0.16);
-      background: rgba(8, 10, 19, 0.95);
+      overflow: hidden;
+      background: #000;
+      position: relative;
+      box-shadow: 0 16px 45px rgba(0, 0, 0, 0.9);
+    }
+
+    .gallery-main img,
+    .gallery-side img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.03);
+      transition: transform 0.9s ease-out;
+      filter: saturate(1.1) contrast(1.1);
+    }
+
+    .gallery-main:hover img,
+    .gallery-side:hover img {
+      transform: scale(1.08);
+    }
+
+    .gallery-caption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 10px 14px;
       font-size: 0.78rem;
       color: var(--text-muted);
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      white-space: nowrap;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.95), transparent);
     }
 
-    .brand-chip span {
+    .gallery-caption strong {
       color: #ffffff;
-      font-weight: 500;
-    }
-
-    .brand-chip i {
-      color: var(--accent-strong);
       font-size: 0.8rem;
     }
 
-    /* About & Fleet */
+    /* Two-column text */
     .two-column {
       display: grid;
       grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
-      gap: 28px;
+      gap: 24px;
       align-items: flex-start;
     }
 
     .text-block {
       border-radius: var(--radius-lg);
       border: 1px solid var(--border-soft);
-      background: radial-gradient(circle at top left, rgba(244, 179, 33, 0.05), rgba(12, 14, 23, 0.98));
+      background: radial-gradient(circle at 0 0, rgba(54, 245, 140, 0.12), rgba(5, 7, 12, 0.98));
       padding: 18px 18px 16px;
-      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.75);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.9);
       font-size: 0.9rem;
       color: var(--text-muted);
-      line-height: 1.7;
+      line-height: 1.8;
     }
 
     .text-block h3 {
@@ -803,21 +861,22 @@
       margin-bottom: 8px;
       font-size: 1.08rem;
       color: #ffffff;
+      font-weight: 500;
     }
 
     .keyline-list {
       list-style: none;
       padding: 0;
       margin: 10px 0 0;
+      font-size: 0.86rem;
     }
 
     .keyline-list li {
       padding: 7px 0;
-      border-bottom: 1px dashed rgba(255, 255, 255, 0.12);
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.14);
       display: flex;
       align-items: center;
       gap: 0.45rem;
-      font-size: 0.86rem;
     }
 
     .keyline-list li:last-child {
@@ -834,16 +893,16 @@
     /* Testimonials */
     .testimonials {
       display: grid;
-      grid-template-columns: 2fr 1.3fr;
-      gap: 24px;
+      grid-template-columns: 1.6fr 1.1fr;
+      gap: 22px;
     }
 
     .testimonial-card {
       border-radius: var(--radius-lg);
       border: 1px solid var(--border-soft);
-      background: radial-gradient(circle at top left, rgba(69, 210, 156, 0.09), rgba(12, 15, 25, 0.98));
+      background: radial-gradient(circle at 0 0, rgba(54, 245, 140, 0.14), rgba(5, 7, 12, 0.98));
       padding: 18px 18px 14px;
-      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.75);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.9);
       font-size: 0.9rem;
       color: var(--text-muted);
     }
@@ -854,25 +913,24 @@
     }
 
     .testimonial-name {
-      font-weight: 500;
+      font-size: 0.86rem;
       color: #ffffff;
       display: flex;
       align-items: center;
       gap: 0.4rem;
-      font-size: 0.85rem;
     }
 
     .testimonial-name span {
       font-size: 0.72rem;
       text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: rgba(161, 165, 184, 0.85);
+      letter-spacing: 0.16em;
+      color: rgba(158, 163, 186, 0.9);
     }
 
     .quick-facts {
       border-radius: var(--radius-lg);
-      border: 1px dashed var(--border-soft);
-      background: rgba(8, 10, 20, 0.98);
+      border: 1px dashed rgba(255, 255, 255, 0.22);
+      background: rgba(4, 6, 10, 0.98);
       padding: 16px 16px 12px;
       font-size: 0.86rem;
       color: var(--text-muted);
@@ -893,10 +951,10 @@
       margin-bottom: 4px;
     }
 
-    /* Hours & Contact & Map */
+    /* Contact / Hours / Map */
     .contact-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.3fr);
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.4fr);
       gap: 24px;
       align-items: flex-start;
     }
@@ -904,7 +962,7 @@
     .contact-panel {
       border-radius: var(--radius-lg);
       border: 1px solid var(--border-soft);
-      background: radial-gradient(circle at top left, rgba(244, 179, 33, 0.08), rgba(9, 10, 19, 0.98));
+      background: radial-gradient(circle at 0 0, rgba(54, 245, 140, 0.12), rgba(4, 6, 10, 0.98));
       padding: 18px 18px 16px;
       box-shadow: var(--shadow-soft);
       font-size: 0.9rem;
@@ -913,9 +971,9 @@
 
     .contact-panel h3 {
       margin-top: 0;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
+      font-size: 1.02rem;
       color: #ffffff;
-      font-size: 1.05rem;
     }
 
     .hours-table {
@@ -926,12 +984,12 @@
     }
 
     .hours-table td {
-      padding: 4px 0;
+      padding: 3px 0;
     }
 
     .hours-day {
       width: 40%;
-      color: rgba(200, 203, 220, 0.95);
+      color: rgba(220, 223, 242, 0.95);
     }
 
     .hours-time {
@@ -952,17 +1010,19 @@
     }
 
     .contact-row small {
-      color: var(--text-muted);
       font-size: 0.8rem;
+      color: var(--text-muted);
     }
 
     .map-panel {
       border-radius: var(--radius-lg);
       overflow: hidden;
-      border: 1px solid var(--border-soft);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: #000;
       box-shadow: var(--shadow-soft);
-      min-height: 260px;
-      background: #050711;
+      min-height: 280px;
+      display: flex;
+      flex-direction: column;
     }
 
     .map-panel iframe {
@@ -974,10 +1034,10 @@
     }
 
     .map-caption {
-      padding: 10px 12px;
-      background: rgba(3, 5, 12, 0.98);
+      padding: 10px 14px;
       font-size: 0.78rem;
       color: var(--text-muted);
+      background: rgba(3, 5, 8, 0.98);
       border-top: 1px solid rgba(255, 255, 255, 0.08);
     }
 
@@ -985,15 +1045,15 @@
       color: #ffffff;
     }
 
-    /* CTA footer strip */
+    /* CTA strip */
     .cta-strip {
-      margin-top: 46px;
-      margin-bottom: 16px;
+      margin-top: 44px;
+      margin-bottom: 20px;
       border-radius: var(--radius-lg);
-      border: 1px solid var(--border-soft);
-      background: radial-gradient(circle at top left, rgba(244, 179, 33, 0.12), rgba(7, 9, 17, 0.98));
+      border: 1px solid rgba(54, 245, 140, 0.35);
+      background: radial-gradient(circle at 0 0, rgba(54, 245, 140, 0.15), rgba(3, 5, 8, 1));
       padding: 18px 18px 16px;
-      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.85);
+      box-shadow: 0 22px 60px rgba(0, 0, 0, 0.95);
       display: flex;
       flex-wrap: wrap;
       gap: 16px;
@@ -1004,9 +1064,9 @@
 
     .cta-strip h2 {
       margin: 0 0 4px;
-      font-size: 1.1rem;
-      letter-spacing: 0.06em;
+      font-size: 1.05rem;
       text-transform: uppercase;
+      letter-spacing: 0.14em;
     }
 
     .cta-strip p {
@@ -1023,18 +1083,22 @@
 
     /* Footer */
     .site-footer {
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      padding: 20px 0 28px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 20px 0 26px;
       font-size: 0.78rem;
       color: var(--text-muted);
+      background: #020305;
     }
 
     .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      gap: 10px;
       justify-content: space-between;
+      gap: 10px;
     }
 
     .footer-links {
@@ -1044,18 +1108,45 @@
       align-items: center;
     }
 
-    .footer-links a {
-      color: var(--text-muted);
+    .footer-links a:hover {
+      color: var(--accent-strong);
     }
 
-    .footer-links a:hover {
-      color: #ffffff;
+    .footer-social {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .footer-social a {
+      width: 26px;
+      height: 26px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(4, 6, 10, 0.96);
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      transition:
+        transform var(--transition-fast),
+        border-color var(--transition-fast),
+        color var(--transition-fast),
+        background var(--transition-fast);
+    }
+
+    .footer-social a:hover {
+      border-color: var(--accent);
+      color: var(--accent-strong);
+      background: rgba(4, 10, 13, 0.96);
+      transform: translateY(-1px);
     }
 
     /* Scroll reveal */
     .reveal {
       opacity: 0;
-      transform: translateY(22px);
+      transform: translateY(20px);
       transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     }
 
@@ -1064,20 +1155,12 @@
       transform: translateY(0);
     }
 
-    .reveal[data-delay="1"] {
-      transition-delay: 0.1s;
-    }
-
-    .reveal[data-delay="2"] {
-      transition-delay: 0.2s;
-    }
-
-    .reveal[data-delay="3"] {
-      transition-delay: 0.3s;
-    }
+    .reveal[data-delay="1"] { transition-delay: 0.1s; }
+    .reveal[data-delay="2"] { transition-delay: 0.2s; }
+    .reveal[data-delay="3"] { transition-delay: 0.3s; }
 
     /* Responsive */
-    @media (max-width: 960px) {
+    @media (max-width: 1024px) {
       .hero-grid,
       .two-column,
       .testimonials,
@@ -1088,9 +1171,12 @@
         order: -1;
       }
       .hero {
-        padding-top: 88px;
+        padding-top: 90px;
       }
       .cards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .hero-brand-row {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
@@ -1098,13 +1184,15 @@
     @media (max-width: 768px) {
       .nav-links {
         position: absolute;
-        top: 64px;
+        top: 66px;
         left: 0;
         right: 0;
         flex-direction: column;
-        background: rgba(4, 6, 14, 0.98);
-        padding: 10px 20px 14px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        align-items: flex-start;
+        gap: 0.8rem;
+        background: rgba(0, 0, 0, 0.98);
+        padding: 12px 20px 16px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.14);
         transform: translateY(-10px);
         opacity: 0;
         pointer-events: none;
@@ -1133,44 +1221,38 @@
         grid-template-columns: minmax(0, 1fr);
       }
 
-      .hero-card {
-        padding: 14px;
-      }
-
-      .hero-photo {
-        height: 220px;
-      }
-
-      .hero-brand-row {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+      .gallery-grid {
+        grid-template-columns: minmax(0, 1fr);
       }
 
       .cta-strip {
         flex-direction: column;
         align-items: flex-start;
       }
-    }
 
-    @media (max-width: 480px) {
-      .nav-inner {
-        padding-inline: 16px;
-      }
-      .page-shell {
-        padding-inline: 16px;
-      }
       .hero-heading {
         font-size: 2.1rem;
       }
     }
+
+    @media (max-width: 480px) {
+      .page-shell {
+        padding: 0 16px;
+      }
+
+      .nav-inner {
+        padding-inline: 16px;
+      }
+    }
   </style>
 
-  <!-- Local Business Structured Data -->
+  <!-- Local Business Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "AutoRepair",
     "name": "Kapustas' Automotive Repair & Service (KARS)",
-    "image": "https://yourgithubusername.github.io/kapustasautorepair/images/hero-garage.jpg",
+    "image": "https://yourgithubusername.github.io/kapustasautorepair/images/hero-shop-exterior.jpg",
     "@id": "https://yourgithubusername.github.io/kapustasautorepair/",
     "url": "https://yourgithubusername.github.io/kapustasautorepair/",
     "telephone": "+1-215-799-4351",
@@ -1184,8 +1266,8 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 40.319,
-      "longitude": -75.339
+      "latitude": 40.3188,
+      "longitude": -75.341
     },
     "openingHoursSpecification": [
       {
@@ -1208,7 +1290,7 @@
     ],
     "sameAs": [
       "https://store12383776.company.site/",
-      "https://sites.google.com/view/kapustasautorepair/home",
+      "https://kars0804.business.site/",
       "https://www.facebook.com/KARS0804/"
     ]
   }
@@ -1219,22 +1301,34 @@
   <header class="site-header" id="site-header">
     <div class="nav-inner">
       <a href="#top" class="brand">
-        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-logo-wrap">
+          <!-- PLACE THEIR LOGO AT /images/kars-logo.png -->
+          <img src="images/kars-logo.png" alt="KARS – Kapustas' Automotive Repair & Service logo" class="brand-logo" />
+        </div>
         <div class="brand-text">
-          <div class="brand-name">KARS</div>
-          <div class="brand-subtitle">Kapustas' Automotive Repair</div>
+          <span class="brand-name">KARS</span>
+          <span class="brand-subtitle">Kapustas' Automotive Repair &amp; Service</span>
         </div>
       </a>
 
-      <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
         <a href="#services">Services</a>
-        <a href="#fleet">Fleet & Custom</a>
+        <a href="#gallery">Shop</a>
+        <a href="#fleet">Fleet &amp; Upgrades</a>
         <a href="#about">About</a>
-        <a href="#hours">Hours & Location</a>
+        <a href="#hours">Hours &amp; Location</a>
         <a href="#contact">Contact</a>
       </nav>
 
       <div class="nav-cta">
+        <div class="social-inline" aria-label="Social links">
+          <a href="https://www.facebook.com/KARS0804/" target="_blank" rel="noopener" aria-label="KARS on Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/kars0804" target="_blank" rel="noopener" aria-label="KARS on Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
         <a class="btn btn-outline" href="tel:+12157994351">
           <i class="fa-solid fa-phone"></i>
           (215) 799-4351
@@ -1249,41 +1343,43 @@
 
   <main id="top">
     <!-- Hero -->
-    <section class="hero section page-shell">
-      <div class="hero-grid">
+    <section class="hero section">
+      <div class="page-shell hero-grid">
         <div class="hero-content reveal" data-delay="1">
-          <div class="hero-eyebrow pill">
+          <div class="pill">
             <span class="pill-dot"></span>
-            Full-service auto repair & custom upgrades in Telford, PA
+            Your one-stop shop for auto repair &amp; upgrades in Telford, PA
           </div>
           <h1 class="hero-heading">
-            Built on honesty.<br />
-            Tuned for <span>performance.</span>
+            Not your typical<br />
+            <span>auto repair shop.</span>
           </h1>
           <p class="hero-subtitle">
-            Kapustas' Automotive Repair &amp; Service (KARS) is your
-            <strong>one-stop shop</strong> for
-            <strong>all makes &amp; models</strong>, factory-recommended
-            maintenance, <strong>welding &amp; fabrication</strong>, and
-            <strong>custom and after-market upgrades</strong>—including
-            trusted brands like Rev-X, KC HiLites, Air Lift, WeatherTech,
-            Thule &amp; Bilstein.
+            Kapustas' Automotive Repair &amp; Service (<strong>KARS</strong>) is
+            a family-run shop providing <strong>full-service auto repair</strong>,
+            <strong>welding &amp; fabrication</strong>, light commercial and
+            small fleet maintenance, and <strong>custom after-market upgrades</strong>
+            with brands you trust.
           </p>
 
           <div class="hero-ctas">
             <a class="btn btn-primary" href="tel:+12157994351">
-              <i class="fa-solid fa-phone"></i>
+              <i class="fa-solid fa-phone-volume"></i>
               Call for service
             </a>
             <a class="btn btn-outline" href="https://store12383776.company.site/" target="_blank" rel="noopener">
               <i class="fa-solid fa-store"></i>
-              Online product store
+              Shop Rev-X &amp; KARS gear
+            </a>
+            <a class="btn btn-ghost" href="#services">
+              View services
+              <i class="fa-solid fa-arrow-right-long"></i>
             </a>
           </div>
 
           <div class="hero-note">
-            <i class="fa-solid fa-check-circle"></i>
-            Family-run • Honest recommendations • Local Telford shop
+            <i class="fa-solid fa-circle-check"></i>
+            Honest work, straight answers, and projects beyond “basic” repairs.
           </div>
 
           <div class="hero-meta">
@@ -1293,10 +1389,10 @@
               <div class="hero-meta-label">Telford, PA 18969</div>
             </div>
             <div class="hero-meta-item">
-              <div class="hero-meta-label">Service hours</div>
-              <div class="hero-meta-value">Mon–Thu: 8am–5pm</div>
-              <div class="hero-meta-value">Fri: 8am–3pm</div>
-              <div class="hero-meta-label">Sat: by appointment • Sun: closed</div>
+              <div class="hero-meta-label">Hours</div>
+              <div class="hero-meta-value">Mon–Thu: 8:00 am – 5:00 pm</div>
+              <div class="hero-meta-value">Fri: 8:00 am – 3:00 pm</div>
+              <div class="hero-meta-label">Sat by appt • Sun closed</div>
             </div>
           </div>
         </div>
@@ -1304,11 +1400,12 @@
         <div class="hero-media-wrapper reveal" data-delay="2">
           <div class="hero-card">
             <div class="hero-photo">
-              <!-- Hero background image is set via CSS: ./images/hero-garage.jpg -->
+              <!-- HERO IMAGE: PLACE shop exterior here -->
+              <img src="images/hero-shop-exterior.jpg" alt="Kapustas' Automotive Repair & Service shop exterior in Telford, Pennsylvania" />
               <div class="hero-photo-overlay">
                 <div class="hero-photo-text">
-                  <h3>Jeremy • Owner / Mechanic</h3>
-                  <p>Hands-on diagnostics, repairs &amp; custom projects from a mechanic who treats your vehicle like his own.</p>
+                  <h3>Jeremy &bull; Owner / Mechanic</h3>
+                  <p>Hands-on diagnostics, repairs &amp; custom work from a mechanic who treats your vehicle like his own.</p>
                 </div>
                 <div class="hero-chip">
                   <i class="fa-solid fa-screwdriver-wrench"></i>
@@ -1318,32 +1415,44 @@
             </div>
 
             <div class="hero-floating-card">
-              <div class="hero-floating-label">Why locals choose KARS</div>
+              <div class="hero-floating-label">What customers say</div>
               <div class="hero-floating-main">
-                “Fast, polite &amp; very honest. Not your typical repair shop—these are the guys you trust with your vehicles.”
+                “Fast, polite, and very honest. Not easy to find a shop you trust—KARS is the place for me.”
               </div>
               <div class="hero-floating-pill">
                 <i class="fa-solid fa-user-group"></i>
-                Rated highly by returning customers
+                High ratings from returning customers
               </div>
               <div class="hero-floating-badge">
                 <span class="hero-floating-badge-dot"></span>
-                Local Telford shop since day one
+                Local Telford shop since 2017
               </div>
             </div>
 
             <div class="hero-brand-row">
               <div class="hero-brand">
+                <i class="fa-solid fa-arrow-up-wide-short"></i>
                 <span>Air Lift</span> dealer &amp; installer
               </div>
               <div class="hero-brand">
+                <i class="fa-solid fa-droplet"></i>
                 <span>Rev-X</span> dealer
               </div>
               <div class="hero-brand">
-                <span>KC HiLites</span> partner
+                <i class="fa-solid fa-lightbulb"></i>
+                <span>KC HiLites</span> partner &amp; installer
               </div>
               <div class="hero-brand">
+                <i class="fa-solid fa-shield-halved"></i>
                 <span>WeatherTech</span> dealer
+              </div>
+              <div class="hero-brand">
+                <i class="fa-solid fa-mountain-sun"></i>
+                <span>Thule</span> dealer
+              </div>
+              <div class="hero-brand">
+                <i class="fa-solid fa-circle-dot"></i>
+                <span>Bilstein</span> installer
               </div>
             </div>
           </div>
@@ -1360,31 +1469,29 @@
               <i class="fa-solid fa-car-wrench"></i>
               Core services
             </div>
-            <h2 class="section-title">Auto repair & maintenance</h2>
+            <h2 class="section-title">Auto repair &amp; maintenance</h2>
           </div>
           <p class="section-kicker">
-            From factory-recommended maintenance to complex diagnostics,
-            KARS is equipped to keep your daily driver, work truck, or
-            weekend build running right.
+            From factory-recommended maintenance to more involved diagnostics and repairs,
+            KARS keeps your daily driver, work truck, or weekend build running the way it should.
           </p>
         </div>
 
         <div class="cards-grid">
           <article class="card reveal" data-delay="1">
-            <div class="card-tag">All Makes & Models</div>
+            <div class="card-tag">All Makes &amp; Models</div>
             <div class="card-icon">
               <i class="fa-solid fa-gauge-high"></i>
             </div>
-            <h3 class="card-title">General repair & diagnostics</h3>
+            <h3 class="card-title">General repair &amp; diagnostics</h3>
             <p class="card-body">
-              Full-service automotive repair shop for gas and diesel
-              vehicles—whether you’re chasing down a new noise, a warning
-              light, or something just “feels off.”
+              Full-service automotive repair for gas and diesel vehicles—whether you’re chasing
+              a warning light, a new noise, or something just feels “off”.
             </p>
             <ul class="card-list">
-              <li>Check engine light &amp; drivability issues</li>
+              <li>Check engine lights &amp; drivability issues</li>
               <li>Brakes, suspension &amp; steering</li>
-              <li>Electrical diagnostics</li>
+              <li>Electrical diagnostics &amp; repair</li>
               <li>Cooling &amp; heating systems</li>
             </ul>
           </article>
@@ -1394,111 +1501,136 @@
             <div class="card-icon">
               <i class="fa-solid fa-oil-can"></i>
             </div>
-            <h3 class="card-title">Factory-recommended maintenance</h3>
+            <h3 class="card-title">Factory-recommended service</h3>
             <p class="card-body">
-              Stay ahead of costly repairs with maintenance that follows
-              your manufacturer’s recommendations—performed by a shop you
-              actually trust.
+              Stay ahead of breakdowns with maintenance that follows your manufacturer’s recommendations,
+              done by a shop you actually know and trust.
             </p>
             <ul class="card-list">
               <li>Oil &amp; filter changes</li>
-              <li>Fluid services &amp; tune-ups</li>
-              <li>Belts, hoses &amp; filters</li>
-              <li>Pre-trip &amp; safety inspections</li>
+              <li>Fluids, belts, hoses &amp; filters</li>
+              <li>Tune-ups &amp; safety checks</li>
+              <li>Pre-trip inspections</li>
             </ul>
           </article>
 
           <article class="card reveal" data-delay="3">
-            <div class="card-tag">Beyond Typical</div>
+            <div class="card-tag">Beyond “Basic”</div>
             <div class="card-icon">
               <i class="fa-solid fa-wrench"></i>
             </div>
-            <h3 class="card-title">Custom projects & inspections</h3>
+            <h3 class="card-title">Custom projects &amp; inspections</h3>
             <p class="card-body">
-              KARS is “not just your typical automotive repair facility.”
-              Bring the projects that need a mechanic who can think and
-              build beyond bolt-on parts.
+              KARS is not just your typical automotive repair facility. Bring the projects that need
+              a mechanic who can think and build beyond bolt-on parts.
             </p>
             <ul class="card-list">
-              <li>Inspections &amp; small body repair</li>
-              <li>Detailing options</li>
-              <li>Specialty repairs &amp; restorations</li>
-              <li>Project consultation &amp; guidance</li>
+              <li>Inspections &amp; specialty repairs</li>
+              <li>Welding repair &amp; frame work*</li>
+              <li>Custom and after-market upgrades</li>
+              <li>Detailing and project consultation</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Fleet & Custom / Brands -->
+    <!-- Gallery / Shop visuals -->
+    <section id="gallery" class="section">
+      <div class="page-shell">
+        <div class="section-header reveal">
+          <div>
+            <div class="badge">
+              <i class="fa-solid fa-camera"></i>
+              Inside the shop
+            </div>
+            <h2 class="section-title">Welding, builds &amp; shelves of Rev-X</h2>
+          </div>
+          <p class="section-kicker">
+            A glimpse into the kind of work that rolls into KARS—repairs, fabrication, and product
+            shelves ready for your next oil change or upgrade.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-main reveal" data-delay="1">
+            <!-- PLACE an in-bay shot or shop interior image here -->
+            <img src="images/gallery-shop-interior.jpg" alt="Interior view of KARS shop with vehicles in the bay and tools ready for repair" />
+            <div class="gallery-caption">
+              <strong>Shop floor:</strong> A working bay set up for diagnostics, repair, welding and custom work—not just quick in-and-out jobs.
+            </div>
+          </div>
+          <div class="gallery-side reveal" data-delay="2">
+            <!-- PLACE a welding or Rev-X shelf shot here -->
+            <img src="images/gallery-welding-revx.jpg" alt="KARS mechanic welding and shelves stocked with Rev-X products" />
+            <div class="gallery-caption">
+              <strong>More than basic repairs:</strong> Welding, custom projects, and shelves stocked with Rev-X and other trusted products.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fleet & Brands -->
     <section id="fleet" class="section">
       <div class="page-shell two-column">
         <div class="text-block reveal">
-          <h3>Light commercial & small fleets</h3>
+          <h3>Light commercial &amp; small fleets</h3>
           <p>
-            Your vehicles are more than transportation—they’re how you earn
-            a living. KARS keeps work trucks, vans, and small fleets on the
-            road with practical, reliable repair and service.
+            Your vehicles are how you earn a living. KARS keeps small fleets, work trucks,
+            and commercial vehicles moving with practical, reliable repair and maintenance.
           </p>
           <ul class="keyline-list">
             <li>
               <span class="keyline-bullet"></span>
-              Preventative maintenance schedules built around your workload.
+              Preventative maintenance plans that match your workload, not just the calendar.
             </li>
             <li>
               <span class="keyline-bullet"></span>
-              Fast turnarounds that prioritize uptime and safety.
+              Priority on uptime, safety and real-world reliability.
             </li>
             <li>
               <span class="keyline-bullet"></span>
-              Honest communication—repairs you need, not extras you don’t.
+              Honest communication—repairs you need, not “extras” you don’t.
             </li>
             <li>
               <span class="keyline-bullet"></span>
-              Welding repair and custom solutions for unique fleet needs.
+              Welding and custom solutions for racks, hitches, suspension and more.
             </li>
           </ul>
         </div>
 
-        <div class="brands-panel reveal" data-delay="2">
-          <div class="badge">
-            <i class="fa-solid fa-bolt"></i>
-            Dealers &amp; partners
-          </div>
-          <p style="margin: 10px 0 4px; font-size: 0.88rem;">
-            KARS is your local shop for performance, utility, and protection
-            upgrades, with install support from brands we trust:
+        <div class="text-block reveal" data-delay="2">
+          <h3>Upgrades with brands you recognize</h3>
+          <p>
+            KARS is a local source for performance, utility and protection upgrades using
+            brands their customers already know and ask for:
           </p>
-          <div class="brands-row">
-            <div class="brand-chip">
-              <i class="fa-solid fa-arrow-up-wide-short"></i>
-              <span>Air Lift</span> – dealer &amp; installer
-            </div>
-            <div class="brand-chip">
-              <i class="fa-solid fa-droplet"></i>
-              <span>Rev-X</span> – dealer
-            </div>
-            <div class="brand-chip">
-              <i class="fa-solid fa-lightbulb"></i>
-              <span>KC HiLites</span> – partner &amp; installer
-            </div>
-            <div class="brand-chip">
-              <i class="fa-solid fa-shield-halved"></i>
-              <span>WeatherTech</span> – dealer
-            </div>
-            <div class="brand-chip">
-              <i class="fa-solid fa-mountain-sun"></i>
-              <span>Thule</span> – dealer
-            </div>
-            <div class="brand-chip">
-              <i class="fa-solid fa-circle-dot"></i>
-              <span>Bilstein</span> – installer
-            </div>
-          </div>
-          <p style="margin: 12px 0 0; font-size: 0.82rem; color: var(--text-muted);">
-            Looking for something specific? Let us know what you’re building
-            and we’ll help you choose the right upgrades for how you actually
-            drive.
+          <ul class="keyline-list">
+            <li>
+              <span class="keyline-bullet"></span>
+              <strong>Air Lift</strong> – dealer &amp; installer for load support and leveling.
+            </li>
+            <li>
+              <span class="keyline-bullet"></span>
+              <strong>Rev-X</strong> – treatment and additives trusted for engines and drivetrains.
+            </li>
+            <li>
+              <span class="keyline-bullet"></span>
+              <strong>KC HiLites</strong> – lighting upgrades, installed correctly.
+            </li>
+            <li>
+              <span class="keyline-bullet"></span>
+              <strong>WeatherTech &amp; Thule</strong> – protection and cargo systems for real use.
+            </li>
+            <li>
+              <span class="keyline-bullet"></span>
+              <strong>Bilstein</strong> – shock and suspension upgrades.
+            </li>
+          </ul>
+          <p style="margin-top: 10px;">
+            Tell them how you use your vehicle—daily driver, tow rig, work truck or trail rig—and they’ll help
+            pick the right upgrades instead of just the flashiest catalog options.
           </p>
         </div>
       </div>
@@ -1516,19 +1648,16 @@
             <h2 class="section-title">Family-run, reputation-built</h2>
           </div>
           <p class="section-kicker">
-            Kapustas' Automotive Repair &amp; Service has grown the old-school
-            way—by doing excellent work, standing behind it, and treating
-            customers like neighbors, not transactions.
+            KARS has grown the old-fashioned way—through word-of-mouth, repeat customers and
+            a reputation for straightforward, quality work.
           </p>
         </div>
 
         <div class="testimonials">
           <article class="testimonial-card reveal" data-delay="1">
             <p class="testimonial-quote">
-              “I cannot say enough about the work these guys do—always fast,
-              polite, and very honest with me. It's not always easy finding
-              someone you trust with your vehicles... KARS is the place for
-              me!”
+              “I cannot say enough about the work these guys do—always fast, polite, and very honest.
+              It's not always easy finding someone you trust with your vehicles... KARS is the place for me!”
             </p>
             <div class="testimonial-name">
               Doug K.
@@ -1537,19 +1666,19 @@
           </article>
 
           <aside class="quick-facts reveal" data-delay="2">
-            <h3>What sets KARS apart</h3>
+            <h3>What to expect when you visit</h3>
             <ul>
-              <li>Owner-operated shop—Jeremy is hands-on in the bay.</li>
+              <li>Jeremy is hands-on in the bay—not just in an office.</li>
               <li>Comfortable with everything from daily drivers to custom builds.</li>
-              <li>Not “just” auto repair—welding, customization &amp; detail work.</li>
-              <li>Clear, straightforward communication about your vehicle.</li>
+              <li>Clear explanations of what your vehicle needs and why.</li>
+              <li>Options discussed with your budget and safety in mind.</li>
             </ul>
           </aside>
         </div>
       </div>
     </section>
 
-    <!-- Hours, Location & Contact -->
+    <!-- Hours, Contact & Map -->
     <section id="hours" class="section">
       <div class="page-shell">
         <div class="section-header reveal">
@@ -1558,11 +1687,11 @@
               <i class="fa-solid fa-location-dot"></i>
               Visit the shop
             </div>
-            <h2 class="section-title">Hours & location</h2>
+            <h2 class="section-title">Hours &amp; location</h2>
           </div>
           <p class="section-kicker">
-            Conveniently located on Bethlehem Pike in Telford, PA. Call ahead
-            for availability or to talk through your next project.
+            Conveniently located on Bethlehem Pike in Telford, PA. Call ahead to talk through
+            your repair, custom work, or fleet needs.
           </p>
         </div>
 
@@ -1602,7 +1731,7 @@
               </tbody>
             </table>
 
-            <h3 style="margin-top: 12px;">Contact</h3>
+            <h3 style="margin-top: 14px;">Contact</h3>
             <div class="contact-row">
               <div>
                 Phone:
@@ -1618,9 +1747,8 @@
                 Telford, PA 18969
               </div>
               <small>
-                For custom work, welding, or fleet service, a quick call
-                before you stop in helps us plan the bay time your vehicle
-                needs.
+                For welding, custom projects, or fleet work, calling ahead helps them set aside
+                the bay time your vehicle will need.
               </small>
             </div>
 
@@ -1628,19 +1756,29 @@
             <div class="contact-row">
               <div>
                 <a href="https://store12383776.company.site/" target="_blank" rel="noopener">
-                  Online product store (Rev-X, KC HiLites, KARS gear)
+                  Online product store – Rev-X, KC HiLites &amp; KARS insignia
+                </a>
+              </div>
+              <div>
+                <a href="https://kars0804.business.site/" target="_blank" rel="noopener">
+                  Google business profile
                 </a>
               </div>
               <div>
                 <a href="https://www.facebook.com/KARS0804/" target="_blank" rel="noopener">
-                  Find us on Facebook
+                  Follow KARS on Facebook
+                </a>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/kars0804" target="_blank" rel="noopener">
+                  Follow KARS on Instagram
                 </a>
               </div>
             </div>
           </div>
 
           <div class="map-panel reveal" data-delay="2" aria-label="Map to Kapustas' Automotive Repair & Service">
-            <!-- Replace src with your own embedded map URL if desired -->
+            <!-- Replace src with fresh Google Maps embed if desired -->
             <iframe
               loading="lazy"
               allowfullscreen
@@ -1650,7 +1788,7 @@
             <div class="map-caption">
               <strong>Directions:</strong>
               Located at 4219 Bethlehem Pike, Building 4, Unit C in Telford, PA.
-              Look for the KARS signage when you pull into the complex.
+              Look for the KARS signage as you enter the complex.
             </div>
           </div>
         </div>
@@ -1659,9 +1797,8 @@
           <div>
             <h2>Ready to schedule or talk through a project?</h2>
             <p>
-              Whether it’s routine maintenance, welding repair, or a custom
-              upgrade, KARS will help you decide what makes sense for your
-              vehicle and budget.
+              Whether it’s routine maintenance, welding repair, a suspension upgrade, or a fleet
+              service plan, KARS can walk you through the options that make sense for your vehicle.
             </p>
           </div>
           <div class="cta-strip-actions">
@@ -1681,7 +1818,7 @@
 
   <!-- Footer -->
   <footer class="site-footer">
-    <div class="page-shell footer-inner">
+    <div class="footer-inner">
       <div>
         &copy; <span id="year"></span> Kapustas' Automotive Repair &amp; Service (KARS). All rights reserved.
       </div>
@@ -1689,15 +1826,24 @@
         <span>4219 Bethlehem Pike, Building 4, Unit C, Telford, PA 18969</span>
         <span>&bull;</span>
         <a href="tel:+12157994351">(215) 799-4351</a>
+        <span>&bull;</span>
+        <div class="footer-social" aria-label="Social media">
+          <a href="https://www.facebook.com/KARS0804/" target="_blank" rel="noopener" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/kars0804" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
 
   <script>
-    // Current year in footer
+    // Current year
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Sticky header state
+    // Sticky header effect
     const header = document.getElementById("site-header");
     window.addEventListener("scroll", () => {
       if (window.scrollY > 24) {
@@ -1716,7 +1862,6 @@
       navLinks.classList.toggle("open");
     });
 
-    // Close mobile nav on link click
     navLinks.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
         navToggle.classList.remove("open");
@@ -1735,11 +1880,8 @@
           }
         });
       },
-      {
-        threshold: 0.18
-      }
+      { threshold: 0.18 }
     );
-
     revealEls.forEach((el) => revealObserver.observe(el));
   </script>
 </body>
