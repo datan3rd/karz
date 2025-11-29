@@ -1,0 +1,1746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kapustas' Automotive Repair & Service | KARS Telford PA Auto Repair</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Kapustas' Automotive Repair & Service (KARS) in Telford, PA. Full-service auto repair, welding, custom upgrades, light commercial & fleet maintenance, and trusted installation of Rev-X, KC HiLites, Air Lift, WeatherTech, Thule & Bilstein." />
+  <meta name="keywords" content="auto repair Telford PA, Kapustas Automotive Repair, KARS Telford, welding repair, custom upgrades, fleet maintenance, inspections, Rev-X dealer, KC HiLites installer" />
+  <link rel="canonical" href="https://yourgithubusername.github.io/kapustasautorepair/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Kapustas' Automotive Repair & Service | KARS Telford PA" />
+  <meta property="og:description" content="Family-run, full-service auto repair and customization in Telford, PA. Honest, skilled, and ready for your next project." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourgithubusername.github.io/kapustasautorepair/" />
+  <meta property="og:image" content="https://yourgithubusername.github.io/kapustasautorepair/images/hero-garage.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons (optional, for social icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    :root {
+      --bg: #050711;
+      --bg-soft: #0f111a;
+      --bg-panel: #111522;
+      --bg-panel-soft: #171b29;
+      --accent: #f4b321;
+      --accent-soft: rgba(244, 179, 33, 0.12);
+      --accent-strong: #ffcf5b;
+      --text: #f7f7fb;
+      --text-muted: #a1a5b8;
+      --border-soft: rgba(255, 255, 255, 0.10);
+      --danger: #ff4e4e;
+      --success: #45d29c;
+      --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.55);
+      --radius-lg: 18px;
+      --radius-md: 12px;
+      --radius-pill: 999px;
+      --transition-fast: 0.18s ease-out;
+      --transition-med: 0.28s ease-out;
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: radial-gradient(circle at top, #151a2f 0, #020309 55%, #000000 100%);
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at top, #151a2f 0, #020309 55%, #000000 100%);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    main {
+      padding-top: 72px; /* space for sticky header */
+    }
+
+    /* Layout helpers */
+    .page-shell {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.3rem 0.9rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: linear-gradient(135deg, rgba(244, 179, 33, 0.16), rgba(255, 255, 255, 0.02));
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent-strong);
+    }
+
+    .pill-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--success);
+      box-shadow: 0 0 10px rgba(69, 210, 156, 0.7);
+    }
+
+    .section {
+      padding: 72px 0 40px;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 1.5rem;
+      align-items: flex-end;
+      margin-bottom: 28px;
+    }
+
+    .section-title {
+      font-size: 1.9rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .section-kicker {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      max-width: 420px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border-soft);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+    }
+
+    .badge i {
+      font-size: 0.8rem;
+      color: var(--accent-strong);
+    }
+
+    .btn {
+      border-radius: var(--radius-pill);
+      padding: 0.65rem 1.4rem;
+      border: 1px solid transparent;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      background: none;
+      color: inherit;
+      transition: background var(--transition-med), transform var(--transition-fast), box-shadow var(--transition-med), border-color var(--transition-med), color var(--transition-med);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background-image: linear-gradient(135deg, var(--accent), var(--accent-strong));
+      color: #171717;
+      box-shadow: 0 16px 35px rgba(244, 179, 33, 0.35);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 22px 45px rgba(244, 179, 33, 0.55);
+    }
+
+    .btn-outline {
+      border-color: rgba(255, 255, 255, 0.22);
+      background: rgba(7, 9, 17, 0.8);
+      color: var(--text);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--accent);
+      background: rgba(15, 18, 32, 0.9);
+      transform: translateY(-1px);
+    }
+
+    .btn-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(5, 7, 12, 0.9);
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.45);
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+    }
+
+    .btn-icon:hover {
+      border-color: var(--accent);
+      background: rgba(12, 15, 26, 0.95);
+      transform: translateY(-1px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.55);
+    }
+
+    /* Header / Nav */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      backdrop-filter: blur(16px);
+      background: linear-gradient(to bottom, rgba(2, 4, 10, 0.93), rgba(2, 4, 10, 0.85), transparent);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      transition: background 0.22s ease-out, box-shadow 0.22s ease-out, transform 0.22s ease-out;
+    }
+
+    .site-header.scrolled {
+      background: radial-gradient(circle at top, rgba(23, 27, 48, 0.98), rgba(5, 7, 15, 0.98));
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.85);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 20px;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      gap: 1.2rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 12px;
+      background: conic-gradient(from 210deg, #f4b321, #ffcf5b, #f4b321, #f4b321, #f4b321);
+      position: relative;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.85);
+      overflow: hidden;
+    }
+
+    .brand-mark::before {
+      content: "";
+      position: absolute;
+      inset: 3px;
+      border-radius: 10px;
+      background: radial-gradient(circle at top, #1a1d2a, #060712 60%, #010104 100%);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .brand-mark::after {
+      content: "K";
+      position: absolute;
+      inset: 3px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Playfair Display", serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--accent-strong);
+      text-shadow: 0 0 12px rgba(244, 179, 33, 0.7);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .brand-name {
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .brand-subtitle {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      position: relative;
+      padding-bottom: 4px;
+      transition: color var(--transition-fast), opacity var(--transition-fast);
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-strong));
+      transition: width var(--transition-fast);
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-toggle {
+      display: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      background: rgba(5, 7, 14, 0.96);
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--text);
+    }
+
+    .nav-toggle span,
+    .nav-toggle span::before,
+    .nav-toggle span::after {
+      display: block;
+      width: 17px;
+      height: 2px;
+      border-radius: 999px;
+      background: var(--text);
+      position: relative;
+      transition: transform 0.21s ease, opacity 0.21s ease;
+    }
+
+    .nav-toggle span::before,
+    .nav-toggle span::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+
+    .nav-toggle span::before {
+      top: -5px;
+    }
+
+    .nav-toggle span::after {
+      top: 5px;
+    }
+
+    .nav-toggle.open span {
+      transform: rotate(45deg);
+    }
+
+    .nav-toggle.open span::before {
+      transform: rotate(-90deg) translateX(-5px);
+    }
+
+    .nav-toggle.open span::after {
+      opacity: 0;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 96px 0 72px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero-eyebrow {
+      margin-bottom: 16px;
+    }
+
+    .hero-heading {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.35rem, 4vw, 3rem);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+
+    .hero-heading span {
+      background: linear-gradient(106deg, #ffffff, #ffe9b0, var(--accent-strong));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      max-width: 540px;
+      line-height: 1.6;
+    }
+
+    .hero-subtitle strong {
+      color: #ffffff;
+      font-weight: 500;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      align-items: center;
+      margin: 24px 0 20px;
+    }
+
+    .hero-note {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .hero-note i {
+      color: var(--accent);
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin-top: 24px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .hero-meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .hero-meta-label {
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.68rem;
+      color: rgba(161, 165, 184, 0.85);
+    }
+
+    .hero-meta-value {
+      color: #ffffff;
+      font-weight: 500;
+    }
+
+    .hero-media-wrapper {
+      position: relative;
+      min-height: 260px;
+    }
+
+    .hero-card {
+      position: relative;
+      border-radius: 26px;
+      background: radial-gradient(circle at top left, #2a304a 0, #0b0d18 45%, #050612 100%);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      box-shadow: var(--shadow-soft);
+      padding: 18px 18px 18px;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background:
+        radial-gradient(circle at top left, rgba(244, 179, 33, 0.18) 0, transparent 50%),
+        radial-gradient(circle at bottom right, rgba(64, 230, 164, 0.12) 0, transparent 55%);
+      opacity: 0.9;
+      mix-blend-mode: screen;
+      pointer-events: none;
+    }
+
+    .hero-photo {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: radial-gradient(circle at top, #161a28 0, #060713 55%);
+      height: 230px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+
+    .hero-photo::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("./images/hero-garage.jpg") center/cover no-repeat;
+      mix-blend-mode: normal;
+      opacity: 0.9;
+    }
+
+    .hero-photo-overlay {
+      position: relative;
+      padding: 14px 16px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: flex-end;
+      background: linear-gradient(to top, rgba(4, 5, 10, 0.95), rgba(4, 5, 10, 0.15));
+    }
+
+    .hero-photo-text h3 {
+      margin: 0 0 4px;
+      font-size: 0.98rem;
+    }
+
+    .hero-photo-text p {
+      margin: 0;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .hero-chip {
+      border-radius: var(--radius-pill);
+      padding: 0.35rem 0.8rem;
+      font-size: 0.7rem;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      background: rgba(5, 5, 10, 0.9);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .hero-chip i {
+      color: var(--accent-strong);
+    }
+
+    .hero-floating-card {
+      position: absolute;
+      right: 8px;
+      top: -10px;
+      border-radius: 14px;
+      padding: 10px 12px;
+      background: rgba(5, 8, 18, 0.98);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75);
+      font-size: 0.75rem;
+      max-width: 210px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      backdrop-filter: blur(14px);
+    }
+
+    .hero-floating-label {
+      text-transform: uppercase;
+      font-size: 0.65rem;
+      letter-spacing: 0.16em;
+      color: var(--text-muted);
+    }
+
+    .hero-floating-main {
+      font-weight: 500;
+      color: #ffffff;
+    }
+
+    .hero-floating-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .hero-floating-pill i {
+      color: var(--accent-strong);
+    }
+
+    .hero-floating-badge {
+      position: absolute;
+      left: -8px;
+      bottom: 12px;
+      border-radius: 999px;
+      padding: 0.22rem 0.65rem;
+      font-size: 0.68rem;
+      background: rgba(9, 12, 28, 0.96);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.32rem;
+    }
+
+    .hero-floating-badge-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: var(--success);
+      box-shadow: 0 0 12px rgba(69, 210, 156, 0.9);
+    }
+
+    .hero-brand-row {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .hero-brand {
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      padding: 5px 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      background: rgba(6, 9, 18, 0.94);
+      white-space: nowrap;
+    }
+
+    .hero-brand span {
+      color: #ffffff;
+      font-weight: 500;
+    }
+
+    /* Services */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-soft);
+      background: radial-gradient(circle at top left, rgba(244, 179, 33, 0.06), rgba(14, 18, 31, 0.96));
+      padding: 18px 18px 16px;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.7);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background: radial-gradient(circle at top right, rgba(244, 179, 33, 0.10) 0, transparent 55%);
+      opacity: 0;
+      transition: opacity var(--transition-med);
+      pointer-events: none;
+    }
+
+    .card:hover::before {
+      opacity: 1;
+    }
+
+    .card-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at top, rgba(244, 179, 33, 0.25), rgba(10, 10, 12, 0.98));
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      margin-bottom: 10px;
+      font-size: 1rem;
+      color: var(--accent-strong);
+    }
+
+    .card-title {
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+
+    .card-body {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .card-list {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .card-list li {
+      margin-bottom: 4px;
+    }
+
+    .card-tag {
+      position: absolute;
+      top: 12px;
+      right: 14px;
+      font-size: 0.66rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: rgba(255, 255, 255, 0.7);
+      background: rgba(6, 7, 14, 0.9);
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    /* Brands / Partners */
+    .brands-panel {
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-soft);
+      background: radial-gradient(circle at top, rgba(244, 179, 33, 0.06), rgba(9, 11, 20, 0.98));
+      padding: 18px 18px 14px;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.75);
+    }
+
+    .brands-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .brand-chip {
+      border-radius: 999px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(8, 10, 19, 0.95);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      white-space: nowrap;
+    }
+
+    .brand-chip span {
+      color: #ffffff;
+      font-weight: 500;
+    }
+
+    .brand-chip i {
+      color: var(--accent-strong);
+      font-size: 0.8rem;
+    }
+
+    /* About & Fleet */
+    .two-column {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
+      gap: 28px;
+      align-items: flex-start;
+    }
+
+    .text-block {
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-soft);
+      background: radial-gradient(circle at top left, rgba(244, 179, 33, 0.05), rgba(12, 14, 23, 0.98));
+      padding: 18px 18px 16px;
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.75);
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .text-block h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 1.08rem;
+      color: #ffffff;
+    }
+
+    .keyline-list {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+    }
+
+    .keyline-list li {
+      padding: 7px 0;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.12);
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.86rem;
+    }
+
+    .keyline-list li:last-child {
+      border-bottom: none;
+    }
+
+    .keyline-bullet {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    /* Testimonials */
+    .testimonials {
+      display: grid;
+      grid-template-columns: 2fr 1.3fr;
+      gap: 24px;
+    }
+
+    .testimonial-card {
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-soft);
+      background: radial-gradient(circle at top left, rgba(69, 210, 156, 0.09), rgba(12, 15, 25, 0.98));
+      padding: 18px 18px 14px;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.75);
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .testimonial-quote {
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .testimonial-name {
+      font-weight: 500;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+    }
+
+    .testimonial-name span {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: rgba(161, 165, 184, 0.85);
+    }
+
+    .quick-facts {
+      border-radius: var(--radius-lg);
+      border: 1px dashed var(--border-soft);
+      background: rgba(8, 10, 20, 0.98);
+      padding: 16px 16px 12px;
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    .quick-facts h3 {
+      margin: 0 0 6px;
+      font-size: 0.95rem;
+      color: #ffffff;
+    }
+
+    .quick-facts ul {
+      margin: 6px 0 0;
+      padding-left: 16px;
+    }
+
+    .quick-facts li {
+      margin-bottom: 4px;
+    }
+
+    /* Hours & Contact & Map */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.3fr);
+      gap: 24px;
+      align-items: flex-start;
+    }
+
+    .contact-panel {
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-soft);
+      background: radial-gradient(circle at top left, rgba(244, 179, 33, 0.08), rgba(9, 10, 19, 0.98));
+      padding: 18px 18px 16px;
+      box-shadow: var(--shadow-soft);
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .contact-panel h3 {
+      margin-top: 0;
+      margin-bottom: 6px;
+      color: #ffffff;
+      font-size: 1.05rem;
+    }
+
+    .hours-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0 6px;
+      font-size: 0.86rem;
+    }
+
+    .hours-table td {
+      padding: 4px 0;
+    }
+
+    .hours-day {
+      width: 40%;
+      color: rgba(200, 203, 220, 0.95);
+    }
+
+    .hours-time {
+      color: var(--text-muted);
+    }
+
+    .contact-row {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .contact-row a {
+      color: var(--accent-strong);
+      font-weight: 500;
+      word-break: break-word;
+    }
+
+    .contact-row small {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+
+    .map-panel {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border-soft);
+      box-shadow: var(--shadow-soft);
+      min-height: 260px;
+      background: #050711;
+    }
+
+    .map-panel iframe {
+      border: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 260px;
+      display: block;
+    }
+
+    .map-caption {
+      padding: 10px 12px;
+      background: rgba(3, 5, 12, 0.98);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .map-caption strong {
+      color: #ffffff;
+    }
+
+    /* CTA footer strip */
+    .cta-strip {
+      margin-top: 46px;
+      margin-bottom: 16px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-soft);
+      background: radial-gradient(circle at top left, rgba(244, 179, 33, 0.12), rgba(7, 9, 17, 0.98));
+      padding: 18px 18px 16px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.85);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.9rem;
+    }
+
+    .cta-strip h2 {
+      margin: 0 0 4px;
+      font-size: 1.1rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .cta-strip p {
+      margin: 0;
+      color: var(--text-muted);
+    }
+
+    .cta-strip-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      align-items: center;
+    }
+
+    /* Footer */
+    .site-footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 20px 0 28px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      justify-content: space-between;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+    }
+
+    .footer-links a:hover {
+      color: #ffffff;
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .reveal.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal[data-delay="1"] {
+      transition-delay: 0.1s;
+    }
+
+    .reveal[data-delay="2"] {
+      transition-delay: 0.2s;
+    }
+
+    .reveal[data-delay="3"] {
+      transition-delay: 0.3s;
+    }
+
+    /* Responsive */
+    @media (max-width: 960px) {
+      .hero-grid,
+      .two-column,
+      .testimonials,
+      .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .hero-media-wrapper {
+        order: -1;
+      }
+      .hero {
+        padding-top: 88px;
+      }
+      .cards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: rgba(4, 6, 14, 0.98);
+        padding: 10px 20px 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        transform: translateY(-10px);
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .nav-links.open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .nav-cta {
+        display: none;
+      }
+
+      .nav-toggle {
+        display: inline-flex;
+      }
+
+      .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .cards-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero-card {
+        padding: 14px;
+      }
+
+      .hero-photo {
+        height: 220px;
+      }
+
+      .hero-brand-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .cta-strip {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .nav-inner {
+        padding-inline: 16px;
+      }
+      .page-shell {
+        padding-inline: 16px;
+      }
+      .hero-heading {
+        font-size: 2.1rem;
+      }
+    }
+  </style>
+
+  <!-- Local Business Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Kapustas' Automotive Repair & Service (KARS)",
+    "image": "https://yourgithubusername.github.io/kapustasautorepair/images/hero-garage.jpg",
+    "@id": "https://yourgithubusername.github.io/kapustasautorepair/",
+    "url": "https://yourgithubusername.github.io/kapustasautorepair/",
+    "telephone": "+1-215-799-4351",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4219 Bethlehem Pike, Building 4, Unit C",
+      "addressLocality": "Telford",
+      "addressRegion": "PA",
+      "postalCode": "18969",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.319,
+      "longitude": -75.339
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday"
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "08:00",
+        "closes": "15:00"
+      }
+    ],
+    "sameAs": [
+      "https://store12383776.company.site/",
+      "https://sites.google.com/view/kapustasautorepair/home",
+      "https://www.facebook.com/KARS0804/"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="nav-inner">
+      <a href="#top" class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-text">
+          <div class="brand-name">KARS</div>
+          <div class="brand-subtitle">Kapustas' Automotive Repair</div>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#fleet">Fleet & Custom</a>
+        <a href="#about">About</a>
+        <a href="#hours">Hours & Location</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn btn-outline" href="tel:+12157994351">
+          <i class="fa-solid fa-phone"></i>
+          (215) 799-4351
+        </a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero section page-shell">
+      <div class="hero-grid">
+        <div class="hero-content reveal" data-delay="1">
+          <div class="hero-eyebrow pill">
+            <span class="pill-dot"></span>
+            Full-service auto repair & custom upgrades in Telford, PA
+          </div>
+          <h1 class="hero-heading">
+            Built on honesty.<br />
+            Tuned for <span>performance.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Kapustas' Automotive Repair &amp; Service (KARS) is your
+            <strong>one-stop shop</strong> for
+            <strong>all makes &amp; models</strong>, factory-recommended
+            maintenance, <strong>welding &amp; fabrication</strong>, and
+            <strong>custom and after-market upgrades</strong>—including
+            trusted brands like Rev-X, KC HiLites, Air Lift, WeatherTech,
+            Thule &amp; Bilstein.
+          </p>
+
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="tel:+12157994351">
+              <i class="fa-solid fa-phone"></i>
+              Call for service
+            </a>
+            <a class="btn btn-outline" href="https://store12383776.company.site/" target="_blank" rel="noopener">
+              <i class="fa-solid fa-store"></i>
+              Online product store
+            </a>
+          </div>
+
+          <div class="hero-note">
+            <i class="fa-solid fa-check-circle"></i>
+            Family-run • Honest recommendations • Local Telford shop
+          </div>
+
+          <div class="hero-meta">
+            <div class="hero-meta-item">
+              <div class="hero-meta-label">Location</div>
+              <div class="hero-meta-value">4219 Bethlehem Pike, Bldg 4, Unit C</div>
+              <div class="hero-meta-label">Telford, PA 18969</div>
+            </div>
+            <div class="hero-meta-item">
+              <div class="hero-meta-label">Service hours</div>
+              <div class="hero-meta-value">Mon–Thu: 8am–5pm</div>
+              <div class="hero-meta-value">Fri: 8am–3pm</div>
+              <div class="hero-meta-label">Sat: by appointment • Sun: closed</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media-wrapper reveal" data-delay="2">
+          <div class="hero-card">
+            <div class="hero-photo">
+              <!-- Hero background image is set via CSS: ./images/hero-garage.jpg -->
+              <div class="hero-photo-overlay">
+                <div class="hero-photo-text">
+                  <h3>Jeremy • Owner / Mechanic</h3>
+                  <p>Hands-on diagnostics, repairs &amp; custom projects from a mechanic who treats your vehicle like his own.</p>
+                </div>
+                <div class="hero-chip">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+                  Full-service repair
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-floating-card">
+              <div class="hero-floating-label">Why locals choose KARS</div>
+              <div class="hero-floating-main">
+                “Fast, polite &amp; very honest. Not your typical repair shop—these are the guys you trust with your vehicles.”
+              </div>
+              <div class="hero-floating-pill">
+                <i class="fa-solid fa-user-group"></i>
+                Rated highly by returning customers
+              </div>
+              <div class="hero-floating-badge">
+                <span class="hero-floating-badge-dot"></span>
+                Local Telford shop since day one
+              </div>
+            </div>
+
+            <div class="hero-brand-row">
+              <div class="hero-brand">
+                <span>Air Lift</span> dealer &amp; installer
+              </div>
+              <div class="hero-brand">
+                <span>Rev-X</span> dealer
+              </div>
+              <div class="hero-brand">
+                <span>KC HiLites</span> partner
+              </div>
+              <div class="hero-brand">
+                <span>WeatherTech</span> dealer
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="page-shell">
+        <div class="section-header reveal">
+          <div>
+            <div class="badge">
+              <i class="fa-solid fa-car-wrench"></i>
+              Core services
+            </div>
+            <h2 class="section-title">Auto repair & maintenance</h2>
+          </div>
+          <p class="section-kicker">
+            From factory-recommended maintenance to complex diagnostics,
+            KARS is equipped to keep your daily driver, work truck, or
+            weekend build running right.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card reveal" data-delay="1">
+            <div class="card-tag">All Makes & Models</div>
+            <div class="card-icon">
+              <i class="fa-solid fa-gauge-high"></i>
+            </div>
+            <h3 class="card-title">General repair & diagnostics</h3>
+            <p class="card-body">
+              Full-service automotive repair shop for gas and diesel
+              vehicles—whether you’re chasing down a new noise, a warning
+              light, or something just “feels off.”
+            </p>
+            <ul class="card-list">
+              <li>Check engine light &amp; drivability issues</li>
+              <li>Brakes, suspension &amp; steering</li>
+              <li>Electrical diagnostics</li>
+              <li>Cooling &amp; heating systems</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" data-delay="2">
+            <div class="card-tag">Maintenance</div>
+            <div class="card-icon">
+              <i class="fa-solid fa-oil-can"></i>
+            </div>
+            <h3 class="card-title">Factory-recommended maintenance</h3>
+            <p class="card-body">
+              Stay ahead of costly repairs with maintenance that follows
+              your manufacturer’s recommendations—performed by a shop you
+              actually trust.
+            </p>
+            <ul class="card-list">
+              <li>Oil &amp; filter changes</li>
+              <li>Fluid services &amp; tune-ups</li>
+              <li>Belts, hoses &amp; filters</li>
+              <li>Pre-trip &amp; safety inspections</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" data-delay="3">
+            <div class="card-tag">Beyond Typical</div>
+            <div class="card-icon">
+              <i class="fa-solid fa-wrench"></i>
+            </div>
+            <h3 class="card-title">Custom projects & inspections</h3>
+            <p class="card-body">
+              KARS is “not just your typical automotive repair facility.”
+              Bring the projects that need a mechanic who can think and
+              build beyond bolt-on parts.
+            </p>
+            <ul class="card-list">
+              <li>Inspections &amp; small body repair</li>
+              <li>Detailing options</li>
+              <li>Specialty repairs &amp; restorations</li>
+              <li>Project consultation &amp; guidance</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fleet & Custom / Brands -->
+    <section id="fleet" class="section">
+      <div class="page-shell two-column">
+        <div class="text-block reveal">
+          <h3>Light commercial & small fleets</h3>
+          <p>
+            Your vehicles are more than transportation—they’re how you earn
+            a living. KARS keeps work trucks, vans, and small fleets on the
+            road with practical, reliable repair and service.
+          </p>
+          <ul class="keyline-list">
+            <li>
+              <span class="keyline-bullet"></span>
+              Preventative maintenance schedules built around your workload.
+            </li>
+            <li>
+              <span class="keyline-bullet"></span>
+              Fast turnarounds that prioritize uptime and safety.
+            </li>
+            <li>
+              <span class="keyline-bullet"></span>
+              Honest communication—repairs you need, not extras you don’t.
+            </li>
+            <li>
+              <span class="keyline-bullet"></span>
+              Welding repair and custom solutions for unique fleet needs.
+            </li>
+          </ul>
+        </div>
+
+        <div class="brands-panel reveal" data-delay="2">
+          <div class="badge">
+            <i class="fa-solid fa-bolt"></i>
+            Dealers &amp; partners
+          </div>
+          <p style="margin: 10px 0 4px; font-size: 0.88rem;">
+            KARS is your local shop for performance, utility, and protection
+            upgrades, with install support from brands we trust:
+          </p>
+          <div class="brands-row">
+            <div class="brand-chip">
+              <i class="fa-solid fa-arrow-up-wide-short"></i>
+              <span>Air Lift</span> – dealer &amp; installer
+            </div>
+            <div class="brand-chip">
+              <i class="fa-solid fa-droplet"></i>
+              <span>Rev-X</span> – dealer
+            </div>
+            <div class="brand-chip">
+              <i class="fa-solid fa-lightbulb"></i>
+              <span>KC HiLites</span> – partner &amp; installer
+            </div>
+            <div class="brand-chip">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>WeatherTech</span> – dealer
+            </div>
+            <div class="brand-chip">
+              <i class="fa-solid fa-mountain-sun"></i>
+              <span>Thule</span> – dealer
+            </div>
+            <div class="brand-chip">
+              <i class="fa-solid fa-circle-dot"></i>
+              <span>Bilstein</span> – installer
+            </div>
+          </div>
+          <p style="margin: 12px 0 0; font-size: 0.82rem; color: var(--text-muted);">
+            Looking for something specific? Let us know what you’re building
+            and we’ll help you choose the right upgrades for how you actually
+            drive.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Testimonials -->
+    <section id="about" class="section">
+      <div class="page-shell">
+        <div class="section-header reveal">
+          <div>
+            <div class="badge">
+              <i class="fa-solid fa-user-gear"></i>
+              About KARS
+            </div>
+            <h2 class="section-title">Family-run, reputation-built</h2>
+          </div>
+          <p class="section-kicker">
+            Kapustas' Automotive Repair &amp; Service has grown the old-school
+            way—by doing excellent work, standing behind it, and treating
+            customers like neighbors, not transactions.
+          </p>
+        </div>
+
+        <div class="testimonials">
+          <article class="testimonial-card reveal" data-delay="1">
+            <p class="testimonial-quote">
+              “I cannot say enough about the work these guys do—always fast,
+              polite, and very honest with me. It's not always easy finding
+              someone you trust with your vehicles... KARS is the place for
+              me!”
+            </p>
+            <div class="testimonial-name">
+              Doug K.
+              <span>Customer</span>
+            </div>
+          </article>
+
+          <aside class="quick-facts reveal" data-delay="2">
+            <h3>What sets KARS apart</h3>
+            <ul>
+              <li>Owner-operated shop—Jeremy is hands-on in the bay.</li>
+              <li>Comfortable with everything from daily drivers to custom builds.</li>
+              <li>Not “just” auto repair—welding, customization &amp; detail work.</li>
+              <li>Clear, straightforward communication about your vehicle.</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hours, Location & Contact -->
+    <section id="hours" class="section">
+      <div class="page-shell">
+        <div class="section-header reveal">
+          <div>
+            <div class="badge">
+              <i class="fa-solid fa-location-dot"></i>
+              Visit the shop
+            </div>
+            <h2 class="section-title">Hours & location</h2>
+          </div>
+          <p class="section-kicker">
+            Conveniently located on Bethlehem Pike in Telford, PA. Call ahead
+            for availability or to talk through your next project.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-panel reveal" data-delay="1" id="contact">
+            <h3>Shop hours</h3>
+            <table class="hours-table" aria-label="Shop hours">
+              <tbody>
+                <tr>
+                  <td class="hours-day">Monday</td>
+                  <td class="hours-time">8:00 am – 5:00 pm</td>
+                </tr>
+                <tr>
+                  <td class="hours-day">Tuesday</td>
+                  <td class="hours-time">8:00 am – 5:00 pm</td>
+                </tr>
+                <tr>
+                  <td class="hours-day">Wednesday</td>
+                  <td class="hours-time">8:00 am – 5:00 pm</td>
+                </tr>
+                <tr>
+                  <td class="hours-day">Thursday</td>
+                  <td class="hours-time">8:00 am – 5:00 pm</td>
+                </tr>
+                <tr>
+                  <td class="hours-day">Friday</td>
+                  <td class="hours-time">8:00 am – 3:00 pm</td>
+                </tr>
+                <tr>
+                  <td class="hours-day">Saturday</td>
+                  <td class="hours-time">By appointment only</td>
+                </tr>
+                <tr>
+                  <td class="hours-day">Sunday</td>
+                  <td class="hours-time">Closed</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 style="margin-top: 12px;">Contact</h3>
+            <div class="contact-row">
+              <div>
+                Phone:
+                <a href="tel:+12157994351">(215) 799-4351</a>
+              </div>
+              <div>
+                Email:
+                <a href="mailto:kars0804@hotmail.com">kars0804@hotmail.com</a>
+              </div>
+              <div>
+                Address:
+                4219 Bethlehem Pike, Building 4, Unit C,
+                Telford, PA 18969
+              </div>
+              <small>
+                For custom work, welding, or fleet service, a quick call
+                before you stop in helps us plan the bay time your vehicle
+                needs.
+              </small>
+            </div>
+
+            <h3 style="margin-top: 14px;">Online</h3>
+            <div class="contact-row">
+              <div>
+                <a href="https://store12383776.company.site/" target="_blank" rel="noopener">
+                  Online product store (Rev-X, KC HiLites, KARS gear)
+                </a>
+              </div>
+              <div>
+                <a href="https://www.facebook.com/KARS0804/" target="_blank" rel="noopener">
+                  Find us on Facebook
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-panel reveal" data-delay="2" aria-label="Map to Kapustas' Automotive Repair & Service">
+            <!-- Replace src with your own embedded map URL if desired -->
+            <iframe
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3054.908070684316!2d-75.341!3d40.3188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s4219%20Bethlehem%20Pike%2C%20Telford%2C%20PA%2018969!5e0!3m2!1sen!2sus!4v1700000000000">
+            </iframe>
+            <div class="map-caption">
+              <strong>Directions:</strong>
+              Located at 4219 Bethlehem Pike, Building 4, Unit C in Telford, PA.
+              Look for the KARS signage when you pull into the complex.
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-strip reveal">
+          <div>
+            <h2>Ready to schedule or talk through a project?</h2>
+            <p>
+              Whether it’s routine maintenance, welding repair, or a custom
+              upgrade, KARS will help you decide what makes sense for your
+              vehicle and budget.
+            </p>
+          </div>
+          <div class="cta-strip-actions">
+            <a class="btn btn-primary" href="tel:+12157994351">
+              <i class="fa-solid fa-phone-volume"></i>
+              Call now: (215) 799-4351
+            </a>
+            <a class="btn btn-outline" href="mailto:kars0804@hotmail.com">
+              <i class="fa-solid fa-envelope"></i>
+              Email the shop
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="page-shell footer-inner">
+      <div>
+        &copy; <span id="year"></span> Kapustas' Automotive Repair &amp; Service (KARS). All rights reserved.
+      </div>
+      <div class="footer-links">
+        <span>4219 Bethlehem Pike, Building 4, Unit C, Telford, PA 18969</span>
+        <span>&bull;</span>
+        <a href="tel:+12157994351">(215) 799-4351</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Sticky header state
+    const header = document.getElementById("site-header");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 24) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+
+    // Mobile nav toggle
+    const navToggle = document.getElementById("nav-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    navToggle.addEventListener("click", () => {
+      navToggle.classList.toggle("open");
+      navLinks.classList.toggle("open");
+    });
+
+    // Close mobile nav on link click
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navToggle.classList.remove("open");
+        navLinks.classList.remove("open");
+      });
+    });
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll(".reveal");
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.18
+      }
+    );
+
+    revealEls.forEach((el) => revealObserver.observe(el));
+  </script>
+</body>
+</html>
