@@ -117,6 +117,14 @@
       position: relative;
     }
 
+    /* NEW: keep logo image same height as green K */
+    .logo img {
+      height: 36px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+    }
+
     .logo-mark {
       width: 36px;
       height: 36px;
@@ -1111,7 +1119,7 @@
     <nav>
       <div class="logo">
         <a href="https://datan3rd.github.io/karz">
-        <img src="https://github.com/datan3rd/karz/blob/main/kars-logo.png?raw=true" alt="Description of the image" height="150">
+          <img src="https://github.com/datan3rd/karz/blob/main/kars-logo.png?raw=true" alt="KARS logo">
         </a>
         <div class="logo-mark">K</div>
         <span>KARS</span>
@@ -1459,9 +1467,9 @@
     document.getElementById('year').textContent = new Date().getFullYear();
 
     // Header scroll effect
-    const header = document.getElementById('header');
+    const headerEl = document.getElementById('header');
     window.addEventListener('scroll', () => {
-      header.classList.toggle('scrolled', window.scrollY > 50);
+      headerEl.classList.toggle('scrolled', window.scrollY > 50);
     });
 
     // Scroll reveal animations
